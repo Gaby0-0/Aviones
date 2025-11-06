@@ -5,21 +5,324 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dashboard_2" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <div class="container-principal">
+        <div class="decoracion-esquina">
 
+        </div>
 
-    <div class="menu"> </div>
+        <div class="panel-dashboard">
 
+            <div class="seccion-lateral">
+        <div class="bloque-perfil">
+            <img src="perfil.jpeg" alt="Perfil" class="imagen-usuario">
+            <h3 class="nombre-usuario">ALEX JOHNSON</h3>
+            <a class="correo-usuario">alex.johnson@gmail.com</a>
+            <div class="circulo-decorativo"></div>
+        </div>
 
-    <div class="tarjeta" style="background-color: #c89c32;"></div>
-    <div class="tarjeta" style="background-color:  #425c5a;"></div>
-    <div class="tarjeta" style="background-color: #425c5a;"></div>
-    <div class="tarjeta tarjeta-doble" ></div>
-    <div class="tarjeta tarjeta-doble" style="width: 380px;  left: 1195px;" ></div>
-    <div class="tarjeta tarjeta-doble" style=" top: 540px; width: 380px; " ></div>
-    <div class="tarjeta tarjeta-doble" style=" top: 540px; left: 835px;" ></div>
+        <div class="seccion-navegacion">
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="#" class="enlace-activo"><img src="casa.png">DASHBOARD</a></li>
+                    <li><a href="#" class="enlace-menu"><img src="avion.png">FLIGHTS</a></li>
+                    <li><a href="#" class="enlace-menu"><img src="cartera.png">WALLET</a></li>
+                    <li><a href="#" class="enlace-menu"><img src="papel.png">REPORTS</a></li>
+                    <li><a href="#" class="enlace-menu"><img src="graf.png">STATISTICS</a></li>
+                    <li><a href="#" class="enlace-menu"><img src="conf.png">SETTINGS</a></li>
+                </ul>
+                <a class="titulo-seccion">ACTIVE USERS</a>
+                <img src="imagen1.png" class="imagen-mapa">
+            </nav>
+            
+        </div>
+            </div>
 
+            <div class="contenido-principal">
+
+        <div class="fila-tarjetas">
+            <div class="tarjeta-info">
+            <p class="etiqueta-superior">Boeing 787</p>
+            <p class="valor-grande">$548</p>
+            <img src="aviones.png" alt="boeing">
+            </div>
+
+            <div class="tarjeta-info">
+            <p class="etiqueta-superior">Airbus 811</p>
+            <p class="valor-grande">$620</p>
+            <img src="aviones.png" alt="boeing">
+            </div>
+
+            <div class="tarjeta-info">
+            <p class="etiqueta-superior">Total Flights</p>
+            <p class="valor-grande">850</p>
+            <img src="imagen2.png" alt="mapa">
+            </div>
+        </div>
+
+        <div class="fila-intermedia">
+            <div class="modulo-viajes">
+                <h3>Last Trips</h3>
+                <p class="subtitulo-modulo">Overview of latest month</p>
+                
+                <div class="encabezado-tabla">
+                    <span class="columna-miembros">Members</span>
+                    <span class="columna-vuelo">Flight</span>
+                    <span class="columna-total">Total Members</span>
+                    <span class="columna-precio">Ticket Price</span>
+                </div>
+                
+                <div class="fila-datos">
+                    <div class="info-miembro">
+                        <img src="usuario.png" alt="John Doe" class="avatar-miembro">
+                        <div>
+                            <p class="nombre-miembro">John Doe</p>
+                            <a class="email-miembro">john@gmail.com</a>
+                        </div>
+                    </div>
+                    <span class="dato-vuelo">Qatar</span>
+                    <div class="dato-total">
+                        <div class="contador-miembros">5</div>
+                    </div>
+                    <span class="dato-precio">$56k</span>
+                </div>
+                
+                <div class="fila-datos">
+                    <div class="info-miembro">
+                        <img src="martin.png" alt="Martin Loiness" class="avatar-miembro">
+                        <div>
+                            <p class="nombre-miembro">Martin Loiness</p>
+                            <a class="email-miembro">martin_loi@gmail.com</a>
+                        </div>
+                    </div>
+                    <span class="dato-vuelo">Emirates</span>
+                    <div class="dato-total">
+                        <div class="contador-miembros variante-dos">2</div>
+                    </div>
+                    <span class="dato-precio">$56k</span>
+                </div>
+
+            </div>
+
+            <div class="modulo-estadisticas">
+                <h3>Statistics</h3>
+
+                <div class="contenedor-grafico">
+                    <div class="eje-vertical">
+                        <span>7</span>
+                        <span>6</span>
+                        <span>5</span>
+                        <span>4</span>
+                        <span>3</span>
+                        <span>2</span>
+                        <span>1</span>
+                        <span></span>
+                    </div>
+                
+                    <div class="rejilla-barras">
+                
+                        <div class="columna-barra">
+                            <div class="barra barra-principal" style="height: 20%;"></div>
+                            <div class="barra barra-secundaria" style="height: 30%;"></div>
+                            <span class="etiqueta-eje">Jan</span>
+                        </div>
+                
+                        <div class="columna-barra">
+                            <div class="barra barra-principal" style="height: 60%;"></div>
+                            <div class="barra barra-secundaria" style="height: 40%;"></div>
+                            
+                            <span class="etiqueta-eje">Feb</span>
+                        </div>
+
+                        <div class="columna-barra">
+                            <div class="barra barra-principal" style="height: 17%;"></div>
+                            <div class="barra barra-secundaria" style="height: 60%;"></div>
+                            
+                            <span class="etiqueta-eje">Mar</span>
+                        </div>
+
+                        <div class="columna-barra">
+                            <div class="barra barra-principal" style="height: 30%;"></div>
+                            <div class="barra barra-secundaria" style="height: 30%;"></div>
+                            
+                            <span class="etiqueta-eje">Apr</span>
+                        </div>
+
+                        <div class="columna-barra">
+                            <div class="barra barra-principal" style="height: 0%;"></div>
+                            <div class="barra barra-secundaria" style="height: 100%;"></div>
+                            
+                            <span class="etiqueta-eje">May</span>
+                        </div>
+
+                        <div class="columna-barra">
+                            <div class="barra barra-principal" style="height: 50%;"></div>
+                            <div class="barra barra-secundaria" style="height: 25%;"></div>
+                            
+                            <span class="etiqueta-eje">Jun</span>
+                        </div>
+                
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="fila-graficos">
+
+            <div class="bloque-compartido">
+                <h3>Flights Share</h3>
+
+                <div class="zona-donut">
+                    <div class="grafico-donut"></div>
+                
+                    <div class="texto-centro">
+                        <p class="etiqueta-centro">Flight Share</p>
+                    </div>
+    </div>
+            </div>
+            
+            <div class="bloque-horario">
+                <canvas id="graficoLineas"></canvas>
+            </div>
+
+        </div>
+
+            </div>
+
+        </div>
+
+    </div>
+   <script>
+        const ctx = document.getElementById('graficoLineas').getContext('2d');
+        
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                datasets: [{
+                    label: 'Dataset 1',
+                    data: [3, 1.7, 3.2, 2.5, 2.3, 4.5],
+                    fill: true,
+                    borderColor: '#4a5f5f',
+                    backgroundColor: 'rgba(74,95,95,0.12)',
+                    tension: 0.5,
+                    pointRadius: 0,
+                    pointHoverRadius: 0,
+                    pointBackgroundColor: '#4a5f5f',
+                    pointBorderWidth: 0,
+                    pointHitRadius: 10
+                }, {
+                    label: 'Dataset 2',
+                    data: [3, 4.2, 2.5, 3.5, 6, 5],
+                    fill: true,
+                    borderColor: '#c9a448',
+                    backgroundColor: 'rgba(201,164,72,0.12)',
+                    tension: 0.5,
+                    pointRadius: 0,
+                    pointHoverRadius: 0,
+                    pointBackgroundColor: '#c9a448',
+                    pointBorderWidth: 0,
+                    pointHitRadius: 10
+                }]
+            },
+            options: { 
+                responsive: true, 
+                maintainAspectRatio: false,
+                layout: {
+                    padding: {
+                        top: 20,
+                        right: 20
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Flights Schedule',
+                        font: {
+                            size: 16,
+                           
+                        },
+                        color: ' #3a5858',
+                        padding: {
+                            bottom: 30
+                        },
+                        align: 'start'
+                    },
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        enabled: true,
+                        backgroundColor: '#4a5f5f',
+                        padding: 16,
+                        cornerRadius: 12,
+                        titleFont: {
+                            size: 16,
+                            weight: '600'
+                        },
+                        bodyFont: {
+                            size: 14
+                        },
+                        displayColors: false,
+                        callbacks: {
+                            title: function(context) {
+                                return Math.round(context[0].parsed.y * 1000);
+                            },
+                            label: function(context) {
+                                return 'Pessangers';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 6,
+                        ticks: { 
+                            stepSize: 1,
+                            color: '#9ca3af',
+                            font: {
+                                size: 14,
+                                weight: '500'
+                            },
+                            padding: 10
+                        },
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.04)',
+                            drawBorder: false
+                        },
+                        border: {
+                            display: false
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: '#9ca3af',
+                            font: {
+                                size: 14,
+                                weight: '500'
+                            },
+                            padding: 10
+                        },
+                        grid: {
+                            display: false,
+                            drawBorder: false
+                        },
+                        border: {
+                            display: false
+                        }
+                    }
+                },
+                interaction: {
+                    mode: 'nearest',
+                    axis: 'x',
+                    intersect: false
+                }
+            }
+        });
+</script>
 </body>
 </html>
